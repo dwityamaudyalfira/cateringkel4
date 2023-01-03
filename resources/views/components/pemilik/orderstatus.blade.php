@@ -101,7 +101,7 @@ aria-hidden="true">
 
                                             <select name="p_status">
                                                 <option value="{{session('p_status')}}" hidden>{{session('p_status')}}</option>
-                                              <option value="pending">pending</option>
+                                              <option value="Tertunda">Tertunda</option>
                                               <option value="completed">completed</option>
                                                <option value="Refunded">Refunded</option>
 
@@ -111,7 +111,7 @@ aria-hidden="true">
                                      </td>
                                   </tr>
                                   <tr>
-                                    <th><i class="fas fa-rupee-sign "></i> Payment Mode:</th>
+                                    <th><i class="fas fa-dollar-sign "></i> Payment Mode:</th>
                                     <td>
 
                                            <form action="pemilik-Update-paymentmode-Status" method="POST">
@@ -122,7 +122,7 @@ aria-hidden="true">
                                             <select name="paymentmode">
                                                 <option value="{{session('paymentmode')}}" hidden>{{session('paymentmode')}}</option>
                                               <option value="Online">Online</option>
-                                              <option value="COD">COD</option>
+                                              <option value="Tunai">Tunai</option>
 
                                             </select>
                                     <button type="submit">Update</button>

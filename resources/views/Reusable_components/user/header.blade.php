@@ -34,18 +34,18 @@ $(document).ready(function (){
 </script>
 <!-- ======= Header ======= -->
     <header id="header" class="z-depth-1"  style="position:fixed;top:0px;width:100%;font-family: 'Balsamiq Sans', cursive;">
-        <div class="container d-flex" >
+        <div class="container d-flex">
 
           <div id="Gainaloe_Logo" class="logo mr-auto" >
             <!--  <h1 class="text-light"><a href="/">CompanYName</a></h1>  -->
             <a href="/" >
-                <img src=" {{asset('assets/img/Desi.png')}}" alt="" class="img-fluid" >
+                <img src=" {{asset('assets/img/logocat.png')}}" alt="" class="img-fluid" style="margin-left:100px;">
             </a>
 
           </div>
           <div class="col-md-4"  >
               <div class="input-group md-form form-sm  " style="width:100%;">
-                <input class="form-control my-0 py-1 red-border searchstring" list="plists" name="plist" id="plist" type="text" placeholder="Search" aria-label="Search" >
+                <input class="form-control my-0 py-1 red-border searchstring" list="plists" name="plist" id="plist" type="text" placeholder="Cari" aria-label="Search" >
                 <datalist id="plists">
                     @php
                        $Products=App\Models\Products::where('status','=','1')->get();
@@ -83,7 +83,7 @@ $(document).ready(function (){
                 @auth
                   <li class="drop-down"><a href="#">  <i class="far fa-user-circle "></i> Akun saya  <i class="fas fa-angle-down"></i></a>
                        <ul>
-                            <li><a href="{{url('dashboard')}}" ><i class="fas fa-tachometer-alt"></i>  Dashboard</a></li>
+                            <li><a href="{{url('dashboard')}}" ><i class="fas fa-tachometer-alt"></i>  Profile Dashboard</a></li>
                             <li><a href="{{url('profile')}}" ><i class="fas fa-user"></i>  Profil</a></li>
                             <li><a href="{{url('Orders')}}" > <i class="fas fa-table"></i> Pesanan</a></li>
 {{--                            <li><a href="{{url('Payments')}}" ><i class="fas fa-receipt"></i>  Transaksi</a></li>--}}
@@ -91,7 +91,7 @@ $(document).ready(function (){
                               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                   @csrf
                               </form>
-                            </li>
+{{--                            </li>--}}
                         </ul>
                   </li>
 

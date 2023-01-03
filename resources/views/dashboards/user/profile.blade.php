@@ -20,7 +20,7 @@
            alertify.set('notifier','position','top-right');
 
 
-                alertify.alert("Warning","Password Wont Match");
+                alertify.alert("Peringatan","Password Tidak Cocok");
           });
 
     </script>
@@ -36,13 +36,13 @@
         </script>
 @endif
 
-<div class="px-5 py-2" style="background:#1CD5E8;margin-top:5px; ">
+{{--<div class="px-5 py-2" style="background:#213D3D;margin-top:5px; ">--}}
 
 
- <p class="my-2"> <span class="fas fa-bars fa-1x" style="font-size:20px;cursor:pointer;color:black;" onclick="openNav()"></span> <a href="/" class="black-text">Home></a><a href="{{url('dashboard')}}" class="black-text">Dashboard></a> <strong class="black-text"> <a href="" class="black-text" >Profile </a> </strong> </p>
+{{-- <p class="my-2"> <span class="fas fa-bars fa-1x" style="font-size:20px;cursor:pointer;color:black;" onclick="openNav()"></span> <a href="/" class="black-text">Home></a><a href="{{url('dashboard')}}" class="black-text">Dashboard></a> <strong class="black-text"> <a href="" class="black-text" >Profile </a> </strong> </p>--}}
 
 
-</div>
+{{--</div>--}}
 <div id="mySidenav" class="sidenav">
     <br><br>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:white;font-size:30px;margin-left:20px;margin-top:80px;">x</a>
@@ -69,7 +69,7 @@ function closeNav() {
 
 <div class="container px-5">
 
-    <h3 class="py-2  ">My Profile</h3>
+    <h3 class="py-2  " style="margin-top: 20px">Profil Saya</h3>
                <div class="row ">
 
                <div class="col-md-12">
@@ -94,7 +94,7 @@ function closeNav() {
                                                        </div>
                                                        <div class="col-md-4">
                                                            <div class="form-group">
-                                                               <label> Email-Id</label>
+                                                               <label> Email</label>
                                                                <input type="text" value="{{Auth::user()->email}}" class="form-control" disabled>
                                                            </div>
                                                        </div>
@@ -111,7 +111,7 @@ function closeNav() {
 
                                                            <div class="form-group">
                                                                 <button type="submit" class="btn btn-success btn-lg"> Update    </button>
-                                                                   <a  data-toggle="modal" data-target="#openpasswordmodel"    class="btaobtn btaobtn-outline-dark btaobtn-lg px-2 py-2"> Change Password    </a>
+                                                                   <a  data-toggle="modal" data-target="#openpasswordmodel"    class="btaobtn btaobtn-outline-dark btaobtn-lg px-2 py-2"> Ganti Password    </a>
                                                            </div>
                                                        </div>
                                                    </div>
@@ -119,7 +119,7 @@ function closeNav() {
                                   </div>
 
 
-    <h3 class="py-3">Delivery Address</h3>
+    <h3 class="py-3">Alamat Pengiriman</h3>
                                    <div class="card">
 
                                        <div class="card-body">
@@ -129,14 +129,14 @@ function closeNav() {
                                                        </div>
                                                        <div class="col-md-6">
                                                            <div class="form-group">
-                                                            <label> Alamat1 ( Door No: )</label>
+                                                            <label> Nomor Rumah</label>
                                                            <input type="text" value="{{Auth::user()->address1}}" name="address1" class="form-control">
                                                            </div>
                                                        </div>
 
                                                        <div class="col-md-4">
                                                            <div class="form-group">
-                                                            <label> Alamat2 ( LandMark/Nearby )</label>
+                                                            <label> Alamat</label>
                                                            <input type="text" value="{{Auth::user()->address2}}" name="address2"   class="form-control">
                                                            </div>
                                                        </div>
@@ -144,7 +144,7 @@ function closeNav() {
                                                    <div class="row">
                                                        <div class="col-md-4">
                                                            <div class="form-group">
-                                                            <label> kota</label>
+                                                            <label> Kota</label>
                                                            <input type="text" value="{{Auth::user()->city}}"  name="city" class="form-control">
                                                            </div>
                                                        </div>
@@ -156,7 +156,7 @@ function closeNav() {
                                                        </div>
                                                        <div class="col-md-4">
                                                            <div class="form-group">
-                                                            <label>Pincode</label>
+                                                            <label>Kode Pos</label>
                                                            <input type="text" value="{{Auth::user()->pincode}}"  name="pincode" class="form-control">
                                                            </div>
                                                        </div>
@@ -168,14 +168,14 @@ function closeNav() {
                                                     </div>
                                                        <div class="col-md-4">
                                                            <div class="form-group">
-                                                            <label>No Hp</label>
+                                                            <label>No. Handphone</label>
                                                            <input type="text" value="{{Auth::user()->mnumber}}" name="mno" class="form-control">
                                                            </div>
                                                        </div>
 
                                                        <div class="col-md-4">
                                                            <div class="form-group">
-                                                            <label>No Hp Alternatif</label>
+                                                            <label>No. Handphone Alternatif</label>
                                                            <input type="text" value="{{Auth::user()->alternativemno}}"   name="alternativemno" class="form-control">
                                                            </div>
                                                        </div>
@@ -223,7 +223,7 @@ function closeNav() {
       <div class="modal-header">
         <p class="heading lead">Error</p>
 
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Tutup">
           <span aria-hidden="true" class="white-text">&times;</span>
         </button>
       </div>
@@ -247,7 +247,7 @@ function closeNav() {
 
       <!--Footer-->
       <div class="modal-footer justify-content-center">
-          <p   class="close" data-dismiss="modal" aria-label="Close"  >
+          <p   class="close" data-dismiss="modal" aria-label="Tutup"  >
         <button  class="btaobtn btaobtn-danger">Try Again<i class="far fa-gem ml-1 text-white"></i></button>
         </p>
 
@@ -266,9 +266,9 @@ function closeNav() {
      <div class="modal-content">
        <!--Header-->
        <div class="modal-header">
-         <p class="heading lead"> Success</p>
+         <p class="heading lead"> Sukses</p>
 
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Tutup">
            <span aria-hidden="true" class="white-text">&times;</span>
          </button>
        </div>
@@ -284,7 +284,7 @@ function closeNav() {
        <!--Footer-->
        <div class="modal-footer justify-content-center">
 
-         <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">Close</a>
+         <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">Tutup</a>
        </div>
      </div>
      <!--/.Content-->
@@ -303,9 +303,9 @@ function closeNav() {
      <div class="modal-content">
        <!--Header-->
        <div class="modal-header">
-         <p class="heading lead">Update Your Password</p>
+         <p class="heading lead">Update Password Kamu</p>
 
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Tutup">
            <span aria-hidden="true" class="white-text">&times;</span>
          </button>
        </div>
@@ -314,8 +314,8 @@ function closeNav() {
        <div class="modal-body">
          <div class="text-center">
            <i class="fas fa-key fa-4x mb-3 animated rotateIn"></i>
-           <input type="password" class="form-control" name="newpass" placeholder="Enter New Password"><br>
-            <input type="password" class="form-control" name="confirm_new_Pass" placeholder="Re-Enter Password">
+           <input type="password" class="form-control" name="newpass" placeholder="Masukkan Password Baru"><br>
+            <input type="password" class="form-control" name="confirm_new_Pass" placeholder="Ulangi Password Baru">
          </div>
        </div>
 

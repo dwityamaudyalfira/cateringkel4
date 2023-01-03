@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller; 
+use App\Http\Controllers\Controller;
 use App\User;
 use App\Models\Products;
 use Illuminate\Support\Facades\DB;
@@ -25,20 +25,20 @@ class ProductController extends Controller
                $id= $lastrecord +1;
            }
            $products->id= $id;
-           $products->name= $request->input('name'); 
+           $products->name= $request->input('name');
            $products->url= $request->input('url');
            $products->description= $request->input('small_description');
            $products->price= $request->input('price');
-          
+
            $products->discount= $request->input('Discount');
            $products->priority= $request->input('priority');
-   
+
            $products->title= $request->input('meta_title');
            $products->meta_description= $request->input('meta_description');
            $products->keywords= $request->input('meta_keyword');
 
            $products->rating= $request->input('rating');
-           
+
            $products->delivery_charges= $request->input('delivery_charges');
            $products->additional_info= $request->input('additional_info');
 
@@ -85,13 +85,13 @@ class ProductController extends Controller
 
            }
            $products->save();
-           return redirect()->back()->with('status','Product Data Added Successfully');
+           return redirect()->back()->with('status','Menu berhasil ditambahkan');
 
     }
     public function update(Request $request, $id)
     {
         $products=Products::find($id);
-        $products->name= $request->input('name'); 
+        $products->name= $request->input('name');
         $products->url= $request->input('url');
         $products->description= $request->input('small_description');
         $products->price= $request->input('price');
@@ -105,7 +105,7 @@ class ProductController extends Controller
         $products->keywords= $request->input('meta_keyword');
 
         $products->status= $request->input('status')==true ? '1':'0';
-        
+
            $products->delivery_charges= $request->input('delivery_charges');
            $products->additional_info= $request->input('additional_info');
 
@@ -169,39 +169,39 @@ class ProductController extends Controller
 
         }
         $products->save();
-        return redirect()->back()->with('status','Product Data Updated Successfully Successfully');   
+        return redirect()->back()->with('status','Menu berhasil diedit');
     }
     public function deleteproduct(Request $request, $id)
     {
         $Products=Products::find($id);
- 
+
         $Products->status = 2;
 
         //Status 1 is active user
         // Status 2 is the user present in the recycle bin (inactive_User)
         $Products->update();
-        return redirect()->back()->with('status', 'Products Moved to Recycle Bin');
+        return redirect()->back()->with('status', 'Menu dipindahkan ke Recycle Bin');
 
-   
+
     }
     public function restore(Request $request, $id)
     {
         $Products=Products::find($id);
- 
+
         $Products->status = 1;
 
         //Status 1 is active user
         // Status 2 is the user present in the recycle bin (inactive_User)
         $Products->update();
-        return redirect()->back()->with('status', 'Products Restored Succesfully');
+        return redirect()->back()->with('status', 'Menu Berhasil Dipulihkan');
 
-   
+
     }
     public function confirmdelete(Request $request, $id)
     {
-    
+
             $delete = Products::find($id);
             $delete->delete();
-            return redirect()->back()->with('status','Product Permanently Deleted  Successfully !!');
+            return redirect()->back()->with('status','Menu Makanan Berhasil Di Hapus Permanen');
     }
 }

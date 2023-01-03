@@ -3,13 +3,13 @@
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
-<div align="center" style="background:#1CD5E8;padding:20px;">
-    <h3  class="black-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}">Admin Dashboard</a></h3>
+<div align="center" style="background:#213D3D;padding:20px;">
+    <h3  class="white-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}" style="color: white">Admin Dashboard</a></h3>
 
 <p class="white-text" style="font-weight:bold;">
-    <a href="{{url('admin-products')}}" class="badge badge-pill btn-green   disabled px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Show All Products</a>
+    <a href="{{url('admin-products')}}" class="badge badge-pill btn-green   disabled px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Tampilkan Semua Menu</a>
 
-    <a href="{{url('admin-add-product')}}" class="badge badge-pill btn-outline-dark   px-3 py-2">   <i class="fas fa-plus"></i>  &nbsp; Add New Product</a>
+    <a href="{{url('admin-add-product')}}" class="badge badge-pill btn-outline-dark   px-3 py-2">   <i class="fas fa-plus"></i>  &nbsp; Tambah Menu Baru</a>
     <a href="{{url('admin-bin-products')}}" class="badge badge-pill btn-outline-danger px-3 py-2"><i class="fas fa-dumpster"></i> Recycle Bin</a>
 
 </p>
@@ -26,7 +26,7 @@
 
 <div class="container py-5">
     <p align="left">
-        <i class="fas fa-file-powerpoint"></i> All Products
+        <i class="fas fa-file-powerpoint"></i> Semua Menu
    </p>
 
         <div class="col-md-12">
@@ -35,12 +35,12 @@
                     <table class="table table-striped table-bordered">
                         <thead>
 
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Images</th>
-                            <th>Price</th>
+                            <th>Nama</th>
+                            <th>Deskripsi</th>
+                            <th>Gambar</th>
+                            <th>Harga</th>
                             <th>Show/Hide</th>
-                            <th>Action</th>
+                            <th>Aksi</th>
 
                         </thead>
                         <tbody>
@@ -75,7 +75,7 @@
                                 </td>
                                 <td>
                                 <a href="{{url('admin-product-edit/'.$item->id)}}" class="badge badge-pill btn-primary px-3 py-2">Edit</a>
-                                <a href="{{url('admin-product-delete/'.$item->id)}}" class="badge badge-pill btn-danger px-3 py-2">Delete</a>
+                                <a href="{{url('admin-product-delete/'.$item->id)}}" class="badge badge-pill btn-danger px-3 py-2">Hapus</a>
 
                                 </td>
                         </tr>

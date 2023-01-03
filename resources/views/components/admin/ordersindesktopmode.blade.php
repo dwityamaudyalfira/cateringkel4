@@ -1,20 +1,20 @@
-<div class="container"> 
-    <h3 class="py-2 px-5">All Orders</h3>
+<div class="container">
+    <h3 class="py-2 px-5">Semua Pesanan</h3>
    <div class="row px-5">
-       
+
        <div class="col-md-12">
                <div class="card">
                    <div class="card-body table-responsive">
                        <table class="table table-striped table-bordered ">
                            <thead>
-                               <th>Order_Id</th>
-                               <th>Order Details</th>
-                               <th>Delivery Address</th>
-                               <th>Total Price</th>
-   
-                               <th>Action</th> 
-                               
-   
+                               <th>Order Id</th>
+                               <th>Detail Pesanan </th>
+                               <th>Alamat Pengiriman</th>
+                               <th>Total Harga</th>
+
+                               <th>Aksi</th>
+
+
                            </thead>
                            @php
                            $email= Auth::user()->email;
@@ -23,34 +23,34 @@
                            <tbody>
                                @foreach ($Orders as $item)
                            <tr>
-   
+
                                <td>{{$item->id}}</td>
                                <td><?php echo $item->Order_Details?></td>
                                <td><?php echo $item->Delivery_Address ?></td>
                                <td>{{$item->Amount}}</td>
-                               <td> 
-                                
-                                <a href="{{url('admin-Order-Status/'.$item->id.'')}}" class="badge btaobtn btaobtn-primary px-2 py-2">Check Status</a>
-                                 
+                               <td>
+
+                                <a href="{{url('admin-Order-Status/'.$item->id.'')}}" class="badge btaobtn btaobtn-primary px-2 py-2">Cek Status</a>
+
                                  @if($item->Delivery_Status!='pending' || $item->Order_Cancel_Status==1)
-                                  <a href="{{url('admin-Order-Status/'.$item->id.'')}}"    class="badge btaobtn btaobtn-danger px-2 py-2 disabled">Cancel Order</a>
+                                  <a href="{{url('admin-Order-Status/'.$item->id.'')}}"    class="badge btaobtn btaobtn-danger px-2 py-2 disabled">Batalkan Pesanan</a>
                                   @else
-                                      <a href="{{url('admin-Order-Cancel/'.$item->id.'')}}" class="badge btaobtn btaobtn-danger px-2 py-2">Cancel Order</a>
-                               
+                                      <a href="{{url('admin-Order-Cancel/'.$item->id.'')}}" class="badge btaobtn btaobtn-danger px-2 py-2">Batalkan Pesanan</a>
+
                                  @endif
-    
+
                                </td>
-    
-   
-   
-   
-    
-                               </td>
+
+
+
+
+
+{{--                               </td>--}}
                            </tr>
                                @endforeach
-   
+
                            </tbody>
-   
+
                        </table>
                    </div>
                </div>
@@ -61,6 +61,6 @@
             {{ $Orders->links()}}</p>
         </div>
    </div>
-  
+
    </div>
    <br> <br>

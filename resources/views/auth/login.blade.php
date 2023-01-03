@@ -4,12 +4,12 @@ Login - Desi Catering
 @endsection
 
 @section('keywords')
-Login ke Desi Catering, signin
+Login ke Desi Catering, sign in
 
 @endsection
 
 @section('description')
-Login  dan pesan makanan mu
+Login dan pesan makanan mu
 
 @endsection
 
@@ -18,12 +18,12 @@ Login  dan pesan makanan mu
 
 <div align="center" class="container-fluid my-3 animated bounceIn">
 
-    <div class="col-md-2">
+    <div class="justify-content-center">
         <a href="/">
-            <img src="{{asset('assets/img/desi.png')}}" class="img-fluid px-2 py-2" style="width:200px;">
+            <img src="{{asset('assets/img/logocat.png')}}" class="text-center" style="width: 400px;">
         </a>
     </div>
-   <h5 class="my-2" >Login</h5>
+   <h5 class="my-2" style="color: #3b2422; font-weight: bold" >LOGIN</h5>
     <div class="row justify-content-center">
         <div class="col-md-7">
                         <form method="POST" action="{{ route('login') }}">
@@ -32,7 +32,7 @@ Login  dan pesan makanan mu
                             <div class="form-group row justify-content-center">
 
                                 <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required  placeholder="{{ __('E-Mail Address') }}" autocomplete="email"  autofocus>
+                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required  placeholder="{{ __('Alamat E-Mail') }}" autocomplete="email"  autofocus>
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -61,7 +61,7 @@ Login  dan pesan makanan mu
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                         <label class="form-check-label" for="remember">
-                                            {{ __('Remember Me') }}
+                                            {{ __('Ingat Akun Ini') }}
                                         </label>
                                     </div>
                                 </div>
@@ -69,16 +69,17 @@ Login  dan pesan makanan mu
 
                             <div class="form-group row mb-0 justify-content-center">
                                 <div class="col-md-12 ">
-                                    <button type="submit" class="btaobtn btaobtn-dark px-5 py-2">
+                                    <button type="submit" class="btaobtn px-5 py-2 rounded-pill" style="background-color: #f6c6ce; color: #3b2422; outline-color: #0a2929">
                                         {{ __('Masuk') }}
                                     </button>
-
-                                        @if (Route::has('password.request'))
-                                            <a class="btn btn-link col-md-12" href="{{ route('password.request') }}">
-                                                {{ __('Lupa Password?') }}
-                                            </a>
-                                        @endif
-                                 <strong>Tidak punya akun! <br> <a href="register" ><u>Buat akun baru</u></a></strong>
+                                    <div class="col-md-12 " style="margin-top: 20px; margin-bottom: 20px">
+                                    </div>
+{{--                                        @if (Route::has('password.request'))--}}
+{{--                                            <a class="btn btn-link col-md-12" href="{{ route('password.request') }}">--}}
+{{--                                                {{ __('Lupa Password?') }}--}}
+{{--                                            </a>--}}
+{{--                                        @endif--}}
+                                 <strong>Tidak punya akun? <br> <a href="register" ><u>Buat akun baru</u></a></strong>
                                 </div>
                                  <div class="col-md-12 ">
                                    <p class="my-2">

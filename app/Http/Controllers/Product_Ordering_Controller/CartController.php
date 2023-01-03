@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Product_Ordering_Controller;
 
     use Illuminate\Http\Request;
-    use App\Http\Controllers\Controller; 
+    use App\Http\Controllers\Controller;
     use App\Models\Products;
     use Illuminate\Support\Facades\Cookie;
     use Session;
@@ -12,7 +12,7 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
     {
         public function index()
         {
-           
+
             return view('Product-Order-Screens.Cart');
         }
         public function addtocart(Request $request)
@@ -32,13 +32,13 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
             {
                 $Response=$Validator->messages();
               //  return response()->json(['alert'=>$Response]);
-               
+
                return response()->json($Response,200);
 
             }
             else
             {
-                
+
                 $prod_id = $request->input('product_id');
                 $quantity = $request->input('quantity');
                 $id=$prod_id;
@@ -70,16 +70,16 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
                                     'item_quantity' => $quantity,
                                     'item_image' => $prod_image,
                                     'item_price' => $priceval,
-                                    'offer_price' => $offerprice, 
+                                    'offer_price' => $offerprice,
                                     'delivery_charges'=>$delivery_charges,
                                     'Final_Price'=>$Final_Price,
-                                    
+
                                     'contentforofferprice'=>$contentforofferprice,
                                 ]
-                        ];   
+                        ];
                         session()->put('cart', $cart);
                         return response()->json(['status'=>'Added to Cart']);
-                
+
                     }
 
                     // if cart not empty then check if this product exist then increment quantity
@@ -102,14 +102,14 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
                                     'delivery_charges'=>$delivery_charges,
                                     'Final_Price'=>$Final_Price,
                                     'contentforofferprice'=>$contentforofferprice,
-                             
+
                                 ];
                                 session()->put('cart', $cart);
                                 return response()->json(['status'=>'Added to Cart']);
                     }
-                } 
+                }
             }
-                       
+
         }
         public function alter_quantity(Request $request)
         {
@@ -129,7 +129,7 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
                 $Response=$Validator->messages();
 
                return response()->json($Response,200);
-               
+
 
             }
             else
@@ -152,13 +152,13 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
                         session()->put('cart', $cart);
                         return response()->json(['status'=>'Quantity is Increased']);
                     }
-                   
-                   
+
+
                 }
             }
 
         }
-        
+
         public function remove(Request $request)
         {
             if($request->id) {
@@ -167,29 +167,28 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
                     unset($cart[$request->id]);
                     session()->put('cart', $cart);
                 }
-                
-               
-                session()->flash('success', 'Product removed successfully');
-                
+
+
+                session()->flash('success', 'Produk Berhasil Dihapus');
+
                 return back()->with('status','Quantity is Increased');
-    
+
             }
         }
         public function clear(Request $request)
         {
                 Session::forget('cart');
-                session()->flash('success', 'Cart is Cleared');
-                
-                return back()->with('cartclear','Cart is Cleared');
+                session()->flash('sukses', 'Keranjang telah dikosongkan');
+
+                return back()->with('Keranjang Kosong','Keranjang telah dikosongkan');
         }
-       
-       
-    
-    
-        
-       
+
+
+
+
+
+
 
     }
 
 
- 

@@ -1,10 +1,10 @@
     <!-- ======= Header ======= -->
-    <header id="header" >
-        <div class="container d-flex" >
+    <header id="header" style="width:100%;">
+        <div class="container d-flex" style="width:80%;">
 
           <div class="logo mr-auto" >
             <!--  <h1 class="text-light"><a href="/">CompanYName</a></h1>  -->
-            <a href="/admin-dash"><img src=" {{asset('assets/img/Desi.png')}}" alt="" class="img-fluid" ></a>
+            <a href="/admin-dash"><img src=" {{asset('assets/img/logocat.png')}}" alt="" class="img-fluid" style="margin-left:100px;" ></a>
 
           </div>
           <p class="mobile-nav-toggle"><i class="fas fa-bars"></i> </p>
@@ -31,7 +31,7 @@
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
-                            </li>
+{{--                            </li>--}}
                         </ul>
                   </li>
 

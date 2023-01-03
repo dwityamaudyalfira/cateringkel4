@@ -41,40 +41,40 @@ class Order_Status_Controller extends Controller
 
 
         /* Email Alert Starts Here*/
-         $email=$Orders->Customer_Emailid;
-         $Order_Details=$Orders->Order_Details;
-                $Delivery_Address=$Orders->Delivery_Address;
-             $p_method=$Orders->paymentmode;
-            $Amount=$Orders->Amount;
-            $status=$Orders->p_status;
-                            $User=User::where('email','=',$email)->first();
-                            $loginid=$email;
-                            $name=$User->name;
-
-        	                $welcomemessage='Hello '.$name.'';
-        	                $emailbody='<p>Your Order has been Shipped. Your estimated delivery date is 3-5 working days. If you would like to view the status of your order or make any changes to it, please visit Your Orders on <a href="https://www.gainaloe.com">Gainaloe.com</a></p><br>
-        	                <h4>Order Details: </h4><p> Order No:'.$id.$Order_Details.'</p>
-        	                 <p><strong>Delivery Address:</strong>
-        	               '.$Delivery_Address.'</p>
-        	                <p> <strong>Total Amount:</strong>
-        	                '.$Amount.'</p>
-        	                 <p><strong>Payment Method:</strong>'.$p_method.'</p>
-        	                  <p><strong>Payment Status:</strong>'.$status.'</p>';
-        	                $emailcontent=array(
-        	                    'WelcomeMessage'=>$welcomemessage,
-        	                    'emailBody'=>$emailbody
-
-        	                    );
-        	                    Mail::send(array('html' => 'emails.order_email'), $emailcontent, function($message) use
-        	                    ($loginid, $name,$id)
-        	                    {
-        	                        $message->to($loginid, $name)->subject
-        	                        (' Your Gainaloe.com order '.$id.' is Shipped');
-        	                        $message->from('codetalentum@btao.in','Gainaloe');
-
-        	                    });
+//         $email=$Orders->Customer_Emailid;
+//         $Order_Details=$Orders->Order_Details;
+//                $Delivery_Address=$Orders->Delivery_Address;
+//             $p_method=$Orders->paymentmode;
+//            $Amount=$Orders->Amount;
+//            $status=$Orders->p_status;
+//                            $User=User::where('email','=',$email)->first();
+//                            $loginid=$email;
+//                            $name=$User->name;
+//
+//        	                $welcomemessage='Hello '.$name.'';
+//        	                $emailbody='<p>Your Order has been Shipped. Your estimated delivery date is 3-5 working days. If you would like to view the status of your order or make any changes to it, please visit Your Orders on <a href="https://www.gainaloe.com">Gainaloe.com</a></p><br>
+//        	                <h4>Order Details: </h4><p> Order No:'.$id.$Order_Details.'</p>
+//        	                 <p><strong>Delivery Address:</strong>
+//        	               '.$Delivery_Address.'</p>
+//        	                <p> <strong>Total Amount:</strong>
+//        	                '.$Amount.'</p>
+//        	                 <p><strong>Payment Method:</strong>'.$p_method.'</p>
+//        	                  <p><strong>Payment Status:</strong>'.$status.'</p>';
+//        	                $emailcontent=array(
+//        	                    'WelcomeMessage'=>$welcomemessage,
+//        	                    'emailBody'=>$emailbody
+//
+//        	                    );
+//        	                    Mail::send(array('html' => 'emails.order_email'), $emailcontent, function($message) use
+//        	                    ($loginid, $name,$id)
+//        	                    {
+//        	                        $message->to($loginid, $name)->subject
+//        	                        (' Your Gainaloe.com order '.$id.' is Shipped');
+//        	                        $message->from('codetalentum@btao.in','Gainaloe');
+//
+//        	                    });
            /* Email Alert Ends Here*/
-        return redirect()->back()->with('status','Shipping Status Updated Succesfully');
+        return redirect()->back()->with('status','Status Pesanan Telah Diperbarui');
 
      }
 
@@ -122,7 +122,7 @@ class Order_Status_Controller extends Controller
 //
 //        	                    });
 //           /* Email Alert Ends Here*/
-        return redirect()->back()->with('status','Delivery  Status Updated Succesfully');
+        return redirect()->back()->with('status','Status Pesanan Telah Diperbarui');
 
      }
       public function Update_Payment_Status(Request $request)
@@ -135,7 +135,7 @@ class Order_Status_Controller extends Controller
 
        $Orders->p_status_Updated_By=$Auth->email;
         $Orders->update();
-        return redirect()->back()->with('status','Payment  Status Updated Succesfully');
+        return redirect()->back()->with('status','Status Pesanan Telah Diperbarui');
 
      }
        public function Update_paymentmode_Status(Request $request)
@@ -148,7 +148,7 @@ class Order_Status_Controller extends Controller
 
        # $Orders->D_Status_Updated_By=$Auth->email;
         $Orders->update();
-        return redirect()->back()->with('status','Payment  Mode  Updated Succesfully');
+        return redirect()->back()->with('status','Status Pesanan Telah Diperbarui');
 
      }
      public function Order_Cancel(Request $request,$id)

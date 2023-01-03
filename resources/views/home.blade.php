@@ -1,7 +1,7 @@
 @extends('layout')
 @section('title') Desi Catering @endsection
 @section('keywords') Home,About,Contact,Car @endsection
-@section('description') Write some descripton about the webpage @endsection
+@section('description') Beranda @endsection
 @section('content')
 
 <div id="slide_show_in_desktop_mode">
@@ -205,8 +205,8 @@ $Products=App\Models\Products::where('status','=','1')->get();
 
        <!--Footer-->
        <div class="modal-footer justify-content-center">
-         <a href="{{url('/')}}" class="btn btn-success">SHOP MORE<i class="far fa-gem ml-1 text-white"></i></a>
-         <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">No, thanks</a>
+         <a href="{{url('/')}}" class="btn btn-success">PESAN LAGI<i class="far fa-gem ml-1 text-white"></i></a>
+         <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">Tidak, terimakasih</a>
        </div>
      </div>
      <!--/.Content-->

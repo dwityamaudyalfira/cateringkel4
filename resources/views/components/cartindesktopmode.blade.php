@@ -5,7 +5,7 @@
            alertify.set('notifier','position','top-right');
 
 
-                alertify.alert("Status","Item Removed Succesfully");
+                alertify.alert("Status","Pesanan Berhasil Dihapus");
           });
      </script>
 
@@ -18,7 +18,7 @@
            alertify.set('notifier','position','top-right');
 
 
-                alertify.alert("Status","All Items are Removed from the Cart!");
+                alertify.alert("Status","Semua Pesanan Dihapus dari Keranjang!");
           });
      </script>
 
@@ -31,16 +31,16 @@
             <div class="shopping-cart-table">
                 <div class="table-responsive">
                     <div class="col-md-12 text-right mb-3" style="margin-top:15px;">
-                            <a href="clear-cart" class="  font-weight-bold ">Clear Cart</a>
+                            <a href="clear-cart" class="  font-weight-bold ">Kosongkan Keranjang</a>
                     </div>
                         <table class="table my-auto  text-center">
                             <thead  class="table-bordered" style="background: white;border-style:solid;">
                             <tr>
-                            <th class="cart-image">Image</th>
-                            <th class="cart-product-name">Product Name</th>
-                            <th class="cart-qty">Quantity</th>
-                            <th class="cart-total">Price</th>
-                            <th class="cart-romove">Remove</th>
+                            <th class="cart-image">Gambar</th>
+                            <th class="cart-product-name">Menu</th>
+                            <th class="cart-qty">Jumlah</th>
+                            <th class="cart-total">Harga</th>
+                            <th class="cart-romove">Hapus</th>
                             </tr>
                             </thead>
 
@@ -98,7 +98,7 @@
             <div class="row">
                 <div class="col-md-8 col-sm-12 estimate-ship-tax">
                     <div>
-                    <a href="/" class="btaobtn btaobtn-upper btaobtn-primary outer-left-xs mx-5">Continue Shopping</a>
+                    <a href="/" class="btaobtn btaobtn-upper btaobtn-primary outer-left-xs mx-5">Lanjut Belanja</a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 ">
@@ -106,7 +106,7 @@
                     <hr>
                     <div class="row">
                         <div class="col-md-6">
-                            <h6 class="cart-grand-name">Grand Total</h6>
+                            <h6 class="cart-grand-name">Total Akhir</h6>
                         </div>
                         <div class="col-md-6">
                             <h6 class="cart-grand-price">
@@ -120,9 +120,9 @@
                         <div class="col-md-12">
                             <div class="cart-checkout-btn text-center">
                                 @if (Auth::user())
-                                     <a href="{{ url('checkout') }}" class="btn btn-outline-success   checkout-btn text-dark">PROCCED TO CHECKOUT</a>
+                                     <a href="{{ url('checkout') }}" class="btn checkout-btn text-dark" style="background-color: #00cc00">CHECKOUT</a>
                                 @else
-                                    <a href="{{ url('login') }}" class="btn btn-outline-success  checkout-btn text-dark">PROCCED TO CHECKOUT</a>
+                                    <a href="{{ url('login') }}" class="btn checkout-btn text-dark" style="background-color: #00cc00">CHECKOUT</a>
                                     {{-- you add a pop modal for making a login --}}
                                 @endif
                             </div>
@@ -135,7 +135,7 @@
                 <div class="col-md-12 mycard py-5 text-center">
                     <div class="mycards">
                         <h4>Keranjang anda kosong.</h4>
-                        <a href="{{url('/')}}" class="btn btn-upper btn-primary outer-left-xs mt-5" style="border-radius:30px;">Continue Shopping</a>
+                        <a href="{{url('/')}}" class="btn outer-left-xs mt-5" style="border-radius:30px; background-color: #83af9b; font-weight: bold">Lanjut Belanja</a>
                     </div>
                 </div>
             </div>

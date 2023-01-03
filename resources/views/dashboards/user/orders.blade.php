@@ -5,13 +5,13 @@
 @section('content')
 
 
-<div class="px-5 py-2" style="background:#1CD5E8;margin-top:5px;" >
+{{--<div class="px-5 py-2" style="background:#213D3D;margin-top:5px;" >--}}
 
 
- <p class="my-2"> <span class="fas fa-bars fa-1x" style="font-size:20px;cursor:pointer;color:black;" onclick="openNav()"></span> <a href="/" class="black-text">Home></a><a href="{{url('dashboard')}}" class="black-text">Dashboard></a> <strong class="black-text"> <a href="" class="black-text" >Orders </a> </strong> </p>
+{{-- <p class="my-2"> <span class="fas fa-bars fa-1x" style="font-size:20px;cursor:pointer;color:black;" onclick="openNav()"></span> <a href="/" class="black-text">Home></a><a href="{{url('dashboard')}}" class="black-text">Dashboard></a> <strong class="black-text"> <a href="" class="black-text" >Orders </a> </strong> </p>--}}
 
 
-</div>
+{{--</div>--}}
 
 <div id="mySidenav" class="sidenav">
     <br><br>
@@ -70,7 +70,7 @@ function closeNav() {
      <div class="modal-content">
        <!--Header-->
        <div class="modal-header">
-         <p class="heading lead">Success</p>
+         <p class="heading lead">Sukses</p>
 
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
            <span aria-hidden="true" class="white-text">&times;</span>
@@ -87,8 +87,8 @@ function closeNav() {
 
        <!--Footer-->
        <div class="modal-footer justify-content-center">
-         <a href="{{url('/')}}" class="btn btn-success">SHOP MORE<i class="far fa-gem ml-1 text-white"></i></a>
-         <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">No, thanks</a>
+         <a href="{{url('/')}}" class="btn btn-success">PESAN LAGI<i class="far fa-gem ml-1 text-white"></i></a>
+         <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">Tidak, terimakasih</a>
        </div>
      </div>
      <!--/.Content-->

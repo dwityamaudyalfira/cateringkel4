@@ -4,10 +4,10 @@
 @section('description') @endsection
 @section('content')
 
-<div align="center" style="background:#1CD5E8;padding:20px;">
-<h3  class="black-text" style="font-weight:bold;margin-top:15px;">
-THE GAINLOE STORY</h3>
-<p class="white-text" style="font-weight:bold;">    Desi Catering</p>
+<div align="center" style="background:#213D3D;padding:20px;">
+<h3  class="white-text" style="font-weight:bold;margin-top:15px;">
+Cerita Desi Catering</h3>
+<p class="white-text" style="font-weight:bold;">Sejarah Bisnis Catering Kami</p>
 
 
 </div>
@@ -17,31 +17,30 @@ THE GAINLOE STORY</h3>
         <div   class="col-md-12 ">
             <div align="center">
                <p class="col-md-4">
-                    <img src="{{url('assets/img/Logo.webp')}}" class="img-fluid">
+                    <img src="{{url('assets/img/logocat.png')}}" class="img-fluid">
                 </p>
             </div>
-              <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Desi Catering merupakan salah satu tempat usaha catering makanan terkenal sejak berdirinya tahun 1983,dimana
+                  Desi Catering  menjual beberapa paket catering untuk berbagai acara seperti Acara Pernikahan,Acara Khitanan dan
+                  beberapa acara lainnya. Desi Catering berlokasi di Jalan Sukakarya tepatnya di Gg RT RW.
                    </p>
-<p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo vel fringilla est. Nunc faucibus a pellentesque sit amet porttitor. Eget dolor morbi non arcu risus quis varius. Pellentesque sit amet porttitor eget. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Aliquet nec ullamcorper sit amet risus nullam eget felis. A diam maecenas sed enim ut sem viverra aliquet eget. Ac odio tempor orci dapibus ultrices in iaculis nunc. Nisi lacus sed viverra tellus in hac. Laoreet non curabitur gravida arcu. Bibendum neque egestas congue quisque egestas. Eget sit amet tellus cras adipiscing enim eu. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Eu mi bibendum neque egestas.</p>
+{{--<p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo vel fringilla est. Nunc faucibus a pellentesque sit amet porttitor. Eget dolor morbi non arcu risus quis varius. Pellentesque sit amet porttitor eget. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Aliquet nec ullamcorper sit amet risus nullam eget felis. A diam maecenas sed enim ut sem viverra aliquet eget. Ac odio tempor orci dapibus ultrices in iaculis nunc. Nisi lacus sed viverra tellus in hac. Laoreet non curabitur gravida arcu. Bibendum neque egestas congue quisque egestas. Eget sit amet tellus cras adipiscing enim eu. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Eu mi bibendum neque egestas.--}}
+{{--</p>--}}
 
-<h1 class="black-text" style="font-weight:bold;">  Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+<h1 class="black-text" style="font-weight:bold;">  Sejarah Desi Catering</h1>
 
     <div align="center">
                <p class="col-md-4">
-                    <img src="{{url('Img/About/1.jpg')}}" class="img-fluid">
+                    <img src="{{url('Img/Gallary/gambar3.jpg')}}" class="img-fluid">
                 </p>
     </div>
 
 
 <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+    Awal berdirinya usaha Desi Catering ini dilatar belakangi karna pemilik yang melihat peluang usaha makanan di daerah
+    UIN Suska Riau,dimana melihat adanya peluang dikarenakan banyaknya mahasiswa yang mengingikan ketersediaan
+    Lauk Pauk yang bervariasi dengan biaya yang ramah di kantong mereka. Berawal dari sebuah rumah sederhana,usaha
+    ini terus berkembang hingga bisa menjadi sebuah Catering Saat ini.
 
 </p>
 
@@ -49,7 +48,7 @@ THE GAINLOE STORY</h3>
         <div align="center" class="col-md-12">
         <div class="col-md-8  ">
 
-<h1 align="center" class="black-text" style="font-weight:bold;">GALLARY</h1>
+<h1 align="center" class="black-text" style="font-weight:bold;">Galeri Foto Desi Catering</h1>
 
                                     <!--Carousel Wrapper-->
                         <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
@@ -64,7 +63,7 @@ THE GAINLOE STORY</h3>
                               <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
                                   <div class="view">
-                                    <img class="d-block w-100" src="{{url('Img/Gallary/1.jpg')}}"
+                                    <img class="d-block w-100" src="{{url('Img/Gallary/Gambar1.png')}}"
                                       alt="First slide">
                                     <div class="mask rgba-black-light"></div>
                                   </div>
@@ -74,11 +73,23 @@ THE GAINLOE STORY</h3>
                                   </div>
                                 </div>
 
+                                  <div class="carousel-item">
+                                      <!--Mask color-->
+                                      <div class="view">
+                                          <img class="d-block w-100" src="{{url('Img/Gallary/gambar4.jpg')}}"
+                                               alt="Third slide">
+                                          <div class="mask rgba-black-slight"></div>
+                                      </div>
+                                      <div class="carousel-caption">
+                                          <h3 class="h3-responsive"> </h3>
+                                          <p> </p>
+                                      </div>
+                                  </div>
 
                                   <div class="carousel-item">
                                   <!--Mask color-->
                                   <div class="view">
-                                    <img class="d-block w-100" src="{{url('Img/Gallary/2.jpg')}}"
+                                    <img class="d-block w-100" src="{{url('Img/Gallary/Gambar2.png')}}"
                                       alt="Third slide">
                                     <div class="mask rgba-black-slight"></div>
                                   </div>
@@ -107,9 +118,9 @@ THE GAINLOE STORY</h3>
         <div align="center" class="col-md-3"> </div>
          <div align="left"  class="col-md-6 mx-3">
               <br>    <br>
-                <span class="black-text" style="font-weight:bold;font-size:25px;">Mission:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                <span class="black-text" style="font-weight:bold;font-size:25px;">Mission:</span> Menjadi catering yang dapat menjalankan kerjasama berdasarkan komitmen yang saling menguntungkan dan dapat dipercaya, menjamin kebersihan dan nilai gizi makanan sampai ke tangan pelanggan serta menjalankan prosedur pengelolaan jasa boga sesuai dengan peraturan pemerintah.<br>
 
-            <span class="black-text" style="font-weight:bold;font-size:25px;">Vision:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <span class="black-text" style="font-weight:bold;font-size:25px;">Vision:</span> Desi Catering adalah mitra terbaik bagi industri dalam memberikan pelayanan jasa boga yang dapat dipercaya dan diandalkan.
 
         </div>
     </div>

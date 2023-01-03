@@ -9,8 +9,8 @@
             <meta name="keywords" content="@yield('keywords')">
             <meta name="description" content="@yield('description')">
              <!-- Favicons -->
-            <link href="{{asset('assets/img/Logo-Square.webp')}}" rel="icon">
-            <link href="{{asset('assets/img/Logo-Square.webp')}}" rel="apple-touch-icon">
+            <link href="{{asset('assets/img/logocat.png')}}" rel="icon">
+            <link href="{{asset('assets/img/logocat.png')}}" rel="apple-touch-icon">
             <link href="{{asset('css/responsivecode.css')}}" rel="stylesheet">
 
             <link href="{{asset('css/main.css')}}" rel="stylesheet">

@@ -6,7 +6,7 @@ aria-hidden="true">
         <div class="modal-content">
         <!--Header-->
         <div class="modal-header">
-            <p class="heading lead">Order Status for Order Number : {{session('Order_id')}} </p>
+            <p class="heading lead">Status Pesanan untuk Nomor Pesanan : {{session('Order_id')}} </p>
 
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true" class="white-text">&times;</span>
@@ -21,14 +21,14 @@ aria-hidden="true">
                       <p class=" animated rotateIn">
                         <i class="fas fa-ban fa-3x"></i>
                         </p>
-                        <h3>Order Cancelled   </h3>
+                        <h3>Pesanan Dibatalkan   </h3>
                 @endif
 
                 @if(session('Delivery_Status')!='pending')
                 <p class=" animated rotateIn">
                 <i class="fas fa-check-circle fa-3x"></i>
                 </p>
-                <h3>Order Completed Succesfully </h3>
+                <h3>Pesanan Sukses</h3>
                 @endif
             <!--Grid row-->
                 <div class="row wow fadeIn">
@@ -45,7 +45,7 @@ aria-hidden="true">
                             <!-- Table  -->
                             <table class="table table-hover">
                                  <tr>
-                                    <th><i class="fas fa-shipping-fast "></i> Shipping  Status</th>
+                                    <th><i class="fas fa-shipping-fast "></i> Status Pesanan</th>
                                       @if(session('Order_Cancel_Status')==1)
                                     <td class="disabled" alt="Disaled">
                                     @else
@@ -67,7 +67,7 @@ aria-hidden="true">
                                     </td>
                                   </tr>
                                   <tr>
-                                    <th><i class="fas fa-truck "></i> Delivery  Status:</th>
+                                    <th><i class="fas fa-truck "></i> Waktu Pembaruan:</th>
                                     @if(session('Order_Cancel_Status')==1 || session('Delivery_Status') !='pending' )
                                     <td class="disabled" alt="Disaled">
                                     @else
@@ -91,7 +91,7 @@ aria-hidden="true">
                                     </td>
                                   </tr>
                                   <tr>
-                                    <th><i class="fas fa-money-check "></i> Payment Status:</th>
+                                    <th><i class="fas fa-money-check "></i> Status Pembayaran:</th>
                                     <td>
 
                                               <form action="admin-Update-Payment-Status" method="POST">
@@ -101,8 +101,8 @@ aria-hidden="true">
 
                                             <select name="p_status">
                                                 <option value="{{session('p_status')}}" hidden>{{session('p_status')}}</option>
-                                              <option value="pending">pending</option>
-                                              <option value="completed">completed</option>
+                                              <option value="Tertunda">Tertunda</option>
+                                              <option value="Selesai">Selesai</option>
                                                <option value="Refunded">Refunded</option>
 
                                             </select>
@@ -111,7 +111,7 @@ aria-hidden="true">
                                      </td>
                                   </tr>
                                   <tr>
-                                    <th><i class="fas fa-rupee-sign "></i> Payment Mode:</th>
+                                    <th><i class="fas fa-dollar-sign "></i> Metode Pembayaran:</th>
                                     <td>
 
                                            <form action="admin-Update-paymentmode-Status" method="POST">
@@ -121,8 +121,8 @@ aria-hidden="true">
 
                                             <select name="paymentmode">
                                                 <option value="{{session('paymentmode')}}" hidden>{{session('paymentmode')}}</option>
-                                              <option value="Online">Online</option>
-                                              <option value="COD">COD</option>
+{{--                                              <option value="Online">Online</option>--}}
+                                              <option value="Tunai">Tunai</option>
 
                                             </select>
                                     <button type="submit">Update</button>
@@ -153,16 +153,16 @@ aria-hidden="true">
                 </div>
                 <!--Grid row-->
 
-                     <p align="left" style="color:red"><br>Note:
+                     <p align="left" style="color:red"><br>Catatan:
                     <ul align="left" style="color:red">
                           @if(session('Order_Cancel_Status')==1 )
                             <li>
-                                 It is not possible to update the delivery and shipping status of the cancelled orders...
+                                Tidak mungkin untuk memperbarui status pesanan yang dibatalkan.
                             </li>
-                            <li>Click <a href="{{url('admin-Order-Re-Cancel/'.session('Order_id').'')}}" >Here</a> to Re Cancel the this Order</li>
+                            <li>Klik <a href="{{url('admin-Order-Re-Cancel/'.session('Order_id').'')}}" >Disini</a> untuk membatalkan Pembatalan Pesanan</li>
                          @else
                                  <li>
-                               It is not possible to update the delivery status for multiple times
+                                     Tidak memungkinkan memperbarui waktu berkali-kali
                             </li>
                          @endif
 
@@ -173,7 +173,7 @@ aria-hidden="true">
 
             <!--Footer-->
         <div class="modal-footer justify-content-center">
-            <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">Close</a>
+            <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">Tutup</a>
         </div>
         </div>
         <!--/.Content-->

@@ -19,8 +19,9 @@ class LinksController extends Controller
         return view('dashboards.pemilik.Products.index')->with('Products', $Products);
     }
 
-    public function     showorders()
+    public function showorders()
     {
+
         return view('dashboards.pemilik.orders');
     }
     public function     showTransactions()

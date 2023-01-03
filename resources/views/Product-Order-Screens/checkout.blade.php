@@ -1,13 +1,13 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') Desi Catering @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
 
-<div class="px-5 py-2" style="background:#1CD5E8;margin-top:5px;" >
-  <h5 class="my-2">  <a href="/" class="black-text">Home</a> <strong class="black-text"> > <a href="{{url('cart')}}" class="black-text" >Cart </a> > <a href="" class="white-text" >Check out </a> </strong> </h5>
+{{--<div class="px-5 py-2" style="background:#213D3D;margin-top:5px;" >--}}
+{{--  <h5 class="my-2">  <a href="/" class="black-text">Home</a> <strong class="black-text"> > <a href="{{url('cart')}}" class="black-text" >Cart </a> > <a href="" class="white-text" >Check out </a> </strong> </h5>--}}
 
-</div>
+{{--</div>--}}
 <h2 align="center" id="writetitle" class="black-text py-3" style="font-weight:bold;">Detail Pesanan</h2>
 <script>
     function Continue()
@@ -26,7 +26,7 @@
           //console.log(data)
           $('#dynamic_content').html(data)
 
-          $('#writetitle').html('Shipping & Payment Details')
+          $('#writetitle').html('Detail Pengiriman & Pembayaran')
 
 
         }
@@ -149,7 +149,7 @@
                                     </li>
                                     @endif
 
-                                    <button onclick="Continue()" class="btaobtn btaobtn-outline-dark px-2 py-2">Continue</button>
+                                    <button onclick="Continue()" class="btaobtn btaobtn-outline-dark px-2 py-2">Lanjutkan</button>
 
                         </ul>
 
@@ -169,12 +169,12 @@
       <!--Modal: modalDiscount-->
       <div class="modal fade right" id="modalDiscount" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true" data-backdrop="true">
-        <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-danger" role="document">
+        <div class="modal-dialog modal-side modal-bottom-left modal-notify modal-danger" role="document">
           <!--Content-->
           <div class="modal-content">
             <!--Header-->
             <div class="modal-header">
-              <p class="heading">Have a Promo Code
+              <p class="heading">Pakai Kode Promo
                 <strong></strong>
               </p>
 
@@ -196,7 +196,7 @@
                 </div>
 
                 <div class="col-12">
-                  <input type="text" class="form-control" name="promo_code" placeholder="Enter Promo Code ">
+                  <input type="text" class="form-control" name="promo_code" placeholder="Masukkan Kode Promo ">
 
                 </div>
               </div>
@@ -204,10 +204,10 @@
 
             <!--Footer-->
             <div class="modal-footer flex-center">
-              <button type="submit" class="btn btn-danger">Apply
+              <button type="submit" class="btn btn-danger">Pakai
                 <i class="far fa-gem ml-1 white-text"></i>
               </button>
-              <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">No, thanks</a>
+              <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Tidak, terimakasih</a>
             </div>
   </form>
           </div>
@@ -259,7 +259,7 @@
       <div class="modal-body">
         <div class="text-center">
           <i class="fas fa-exclamation-circle fa-4x mb-3 animated rotateIn"></i>
-          <h3 style="color: red"> Some Errors are Found! </h3>
+          <h3 style="color: red"> Beberapa Kesalahan Ditemukan! </h3>
          <ul align="left"  >
            @foreach ($errors->all() as $error)
 
@@ -281,7 +281,7 @@
       <!--Footer-->
       <div class="modal-footer justify-content-center">
           <p   class="close" data-dismiss="modal" aria-label="Close"  >
-        <button  class="btaobtn btaobtn-danger">Try Again<i class="far fa-gem ml-1 text-white"></i></button>
+        <button  class="btaobtn btaobtn-danger">Coba Lagi<i class="far fa-gem ml-1 text-white"></i></button>
         </p>
 
       </div>

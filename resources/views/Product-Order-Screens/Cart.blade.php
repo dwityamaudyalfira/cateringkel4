@@ -31,10 +31,10 @@
     }
     </style>
 
-<div  class="px-5 py-2" style="background:#1CD5E8;margin-top:5px;" >
-      <h5 class="my-2">  <a href="/" class="black-text">Home></a> <strong class="black-text"> <a href="" class="white-text" >Cart </a> </strong> </h5>
+{{--<div  class="px-5 py-2" style="background:#213D3D;margin-top:5px;" >--}}
+{{--      <h5 class="my-2">  <a href="/" class="black-text">Home></a> <strong class="black-text"> <a href="" class="white-text" >Cart </a> </strong> </h5>--}}
 
-</div>
+{{--</div>--}}
 
 
            <!-- Cart Section Starts Here-->

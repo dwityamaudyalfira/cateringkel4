@@ -35,13 +35,13 @@
                               <div align="left" class="col-md-5 p-5 mx-5">
                                   <h1 class="black-text animated fadeInLeft slow " style="font-size:30px;">Berbagai macam menu makanan dengan cita rasa resep keluarga</h1>
 
-                               <a href="{{url('Shop/ayamgulai')}}" target="_blank" class="btn btn-dark rounded-pill">Lihat Ayam Gulai</a>
+                               <a href="{{url('Shop/p1nb')}}" target="_blank" class="btn btn-dark rounded-pill">Lihat Paket 1 Nasi Bungkus</a>
                               </div>
                               <div class="col-md-3 animated fadeInRight slow" style="margin-top:30px;">
-                                  <img class="img-thumbnail" src=" {{asset('slideshow/ayamgulai.jpg')}}" alt="Cinque Terre" style="height: 300px; width: 300px;">
+                                  <img class="img-thumbnail" src=" {{asset('slideshow/p1nb4.jpg')}}" alt="Cinque Terre" style="height: 300px; width: 300px;">
                               </div>
                               <div class="col-md-3 animated fadeInRight slow" style="margin-top:30px;">
-                                  <img class="img-thumbnail" src=" {{asset('slideshow/ayamgulai2.jpg')}}" alt="Cinque Terre" style="height: 300px; width: 300px;">
+                                  <img class="img-thumbnail" src=" {{asset('slideshow/p1nb3.jpg')}}" alt="Cinque Terre" style="height: 300px; width: 300px;">
                               </div>
 
 

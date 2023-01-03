@@ -1,15 +1,15 @@
 @extends('layout')
 @section('title') Desi catering @endsection
 @section('keywords') Home,About,Contact,Car @endsection
-@section('description') Write some descripton about the webpage @endsection
+@section('description') Menu @endsection
 @section('content')
 
-<div align="left" class="px-5 py-2" style="background:#1CD5E8;margin-top:5px; ">
+{{--<div align="left" class="px-5 py-2" style="background:#213D3D;margin-top:5px; ">--}}
 
-<p class="my-2 "  style="font-weight:bold; "><a href="{{url('/')}}" class="black-text">Home </a>/ {{$Product->name}} </p>
+{{--<p class="my-2 "  style="font-weight:bold; "><a href="{{url('/')}}" class="black-text">Home </a>/ {{$Product->name}} </p>--}}
 
 
-</div>
+{{--</div>--}}
 <link rel="stylesheet" href="{{asset('assets/css/xzoom.css')}}">
 <script src="{{ asset('assets/js/srcforimagezoomingeffects.min.js')}}"></script>
 <script src="{{ asset('assets/js/xzoom.min.js')}}"></script>

@@ -1,7 +1,7 @@
 @extends('layout')
 @section('title') Desi Catering @endsection
 @section('keywords') Home,About,Contact,Car @endsection
-@section('description') Write some descripton about the webpage @endsection
+@section('description') Bantuan @endsection
 @section('content')
 <style>
 
@@ -33,14 +33,14 @@
     <div class="card mb-4 ">
 
     <div class="view overlay">
-    <img class="card-img-top  animated pulse infinite slow" src="https://codyhouse.co/demo-templates/mercurio/assets/img/card-v8-img-1.jpg" alt="Card image cap">
+    <img class="card-img-top  animated pulse infinite slow" src="{{asset('slideshow/b1.png')}}" alt="Card image cap">
     <a href="Frequently-Asked-Questions">
     <div class="mask rgba-white-slight"></div>
     </a>
     </div>
 
     <div class="card-body">
-    <h4 align="center" class="card-title font-weight-bold">Pertanyaan yang Sering Ditanyakan</h4>
+    <h4 align="center" class="card-title font-weight-bold">Pertanyaan yang sering diajukan</h4>
 
     <a href="Frequently-Asked-Questions" align="center" type="button" class="btaobtn btaobtn-outline-primary btn-md  animated pulse infinite slow">Baca selengkapnya</a>
     </div>
@@ -50,7 +50,7 @@
     <div class="card mb-4">
 
     <div class="view overlay">
-    <img class="card-img-top  animated pulse infinite slow" src="https://codyhouse.co/demo-templates/mercurio/assets/img/card-v8-img-3.jpg" alt="Card image cap">
+    <img class="card-img-top  animated pulse infinite slow" src="{{asset('slideshow/b3.png')}}" alt="Card image cap">
     <a href="Shipping-and-Returns">
     <div class="mask rgba-white-slight"></div>
     </a>
@@ -67,7 +67,7 @@
     <div class="card mb-4">
 
     <div class="view overlay">
-    <img class="card-img-top  animated pulse infinite slow" src="https://codyhouse.co/demo-templates/mercurio/assets/img/card-v8-img-4.jpg" alt="Card image cap">
+    <img class="card-img-top  animated pulse infinite slow" src="{{asset('slideshow/b2.png')}}" alt="Card image cap">
     <a href="Contact">
     <div class="mask rgba-white-slight"></div>
     </a>
@@ -93,9 +93,9 @@
     <div class="card mb-2">
     <img class="card-img-top  animated pulse infinite slow" src="https://codyhouse.co/demo-templates/mercurio/assets/img/card-v8-img-1.jpg" alt="Card image cap">
     <div class="card-body">
-    <h4 class="card-title font-weight-bold">Pertanyaan yang Sering Ditanyakan</h4>
+    <h4 class="card-title font-weight-bold">Pertanyaan yang sering diajukan</h4>
 
-    <a href="Frequently-Asked-Questions" class="btn btn-primary btn-md btn-rounded  animated pulse infinite slow">READ MORE</a>
+    <a href="Frequently-Asked-Questions" class="btn btn-primary btn-md btn-rounded  animated pulse infinite slow">BACA SELENGKAPNYA</a>
     </div>
     </div>
     </div>
@@ -107,7 +107,7 @@
     <div class="card-body">
     <h4 class="card-title font-weight-bold">Pengiriman & Pengembalian</h4>
 
-    <a href="Shipping-and-Returns" class="btn btn-primary btn-md btn-rounded  animated pulse infinite slow">READ MORE</a>
+    <a href="Shipping-and-Returns" class="btn btn-primary btn-md btn-rounded  animated pulse infinite slow">BACA SELENGKAPNYA</a>
     </div>
     </div>
     </div>
@@ -119,7 +119,7 @@
     <div class="card-body">
     <h4 class="card-title font-weight-bold">Kontak Kami</h4>
 
-    <a href="Contact" class="btn btn-primary btn-md btn-rounded  animated pulse infinite slow">READ MORE</a>
+    <a href="Contact" class="btn btn-primary btn-md btn-rounded  animated pulse infinite slow">BACA SELENGKAPNYA</a>
     </div>
     </div>
     </div>
@@ -135,7 +135,5 @@
     </section>
     </div>
     </div>
-    </section>
-</div>
-</div>
+
 @endsection

@@ -3,11 +3,11 @@
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
-<div align="center" style="background:#1CD5E8;padding:20px;">
-  <h3  class="black-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}">Admin Dashboard</a></h3>
+<div align="center" style="background:#213D3D;padding:20px;">
+  <h3  class="white-text" style="font-weight:bold;"><a href="{{url('admin-dash')}} " style="color: white">Admin Dashboard</a></h3>
 <p class="white-text" style="font-weight:bold;">
 
-   <a href="" class="badge badge-pill btn-dark disabled px-3 py-2">   <i class="fas fa-users"></i>  All Users</a>
+   <a href="" class="badge badge-pill btn-dark disabled px-3 py-2">   <i class="fas fa-users"></i>  Semua Akun</a>
     <a href="{{url('admin-bin-users')}}" class="badge badge-pill btn-outline-danger px-3 py-2"><i class="fas fa-dumpster"></i> Recycle Bin</a>
     </p>
 @if (session('status'))
@@ -25,7 +25,7 @@
 <div class="container py-2">
 
    <p align="left">
-        <i class="fas fa-users"></i> Registerd Users
+        <i class="fas fa-users"></i> Akun Terdaftar
    </p>
      <!--Grid column-->
      <div class="col-md-12 mb-4">
@@ -41,12 +41,12 @@
             <!-- Table head -->
             <thead class="blue-grey lighten-4">
                 <tr>
-                <th>#Id</th>
-                <th>Name</th>
-                <th>EmailId</th>
+                <th>Nomor Id</th>
+                <th>Nama</th>
+                <th>Email</th>
                 <th>Role</th>
 
-                <th>Action</th>
+                <th>Aksi</th>
                 </tr>
             </thead>
             <!-- Table head -->

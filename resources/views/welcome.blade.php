@@ -241,9 +241,9 @@ $Products=App\Models\Products::where('status','=','1')->get();
       <div class="modal-body mb-0 text-center">
             <form method="POST" action="subscribe-news-letter">
                 @csrf
-                <input type="text" class="form-control"  name="name" placeholder="Your Name" required><br>
-                <input type="email"  class="form-control"  name="email" placeholder="Your Email Id" required>
-                <button class="btn rounded-pill" style="background-color:#40BFD6;">Submit</button>
+                <input type="text" class="form-control"  name="name" placeholder="Nama Kamu" required><br>
+                <input type="email"  class="form-control"  name="email" placeholder="Email Kamu" required>
+                <button class="btn rounded-pill" style="background-color:#40BFD6;">Kirim</button>
             </form>
       </div>
 

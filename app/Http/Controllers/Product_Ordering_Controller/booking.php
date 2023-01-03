@@ -37,7 +37,7 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
 
                     session(['promocode' => $Coupen->code]);
                     session(['discount' =>$Coupen->discount ]);
-                    session(['message' =>'% Promo Code Applied Succesfully' ]);
+                    session(['message' =>'% Kode Promo Berhasil Digunakan' ]);
                     session()->reflash();
 
 
@@ -47,7 +47,7 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
                 {
                     //die
 
-                return back()->with('invalid','You Entered Invalid Promo Code');
+                return back()->with('Tidak Valid','Kamu Memasukkan Kode Yang Salah');
                 }
 
         }

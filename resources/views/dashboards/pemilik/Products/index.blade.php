@@ -3,11 +3,11 @@
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
-<div align="center" style="background:#1CD5E8;padding:20px;">
-    <h3  class="black-text" style="font-weight:bold;"><a href="{{url('pemilik-dash')}}">Pemilik Dashboard</a></h3>
+<div align="center" style="background:#213D3D;padding:20px;">
+    <h3  class="white-text" style="font-weight:bold;"><a href="{{url('pemilik-dash')}}" style="color: white">Pemilik Dashboard</a></h3>
 
 <p class="white-text" style="font-weight:bold;">
-    <a href="{{url('pemilik-products')}}" class="badge badge-pill btn-green   disabled px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Show All Products</a>
+    <a href="{{url('pemilik-products')}}" class="badge badge-pill btn-green   disabled px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Tampilkan Semua Menu</a>
 
 
 </p>
@@ -37,7 +37,7 @@
                             <th>Deskripsi</th>
                             <th>Gambar</th>
                             <th>Harga</th>
-
+                            <th>Show/Hide</th>
 
 
                         </thead>

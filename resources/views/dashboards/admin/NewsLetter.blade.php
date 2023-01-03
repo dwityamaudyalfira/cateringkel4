@@ -3,8 +3,8 @@
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
-<div align="center" style="background:#1CD5E8;padding:20px;">
-    <h3  class="black-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}">Admin Dashboard</a></h3>
+<div align="center" style="background:#213D3D;padding:20px;">
+    <h3  class="white-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}" style="color: white">Admin Dashboard</a></h3>
 
 <p class="white-text" style="font-weight:bold;">
 
@@ -23,8 +23,8 @@
 
 <div class="container py-5">
     <p align="left">
-        <i class="fas fa-file-powerpoint"></i> News Letter Subscription Data
-   </p>
+        <i class="fas fa-file-powerpoint"></i> Data Pelanggan Langganan Email
+    </p>
 
 <div class="col-md-12">
         <div class="card">

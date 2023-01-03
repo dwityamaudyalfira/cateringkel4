@@ -21,16 +21,16 @@
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold">Menu</h6>
         <p>
-          <a href="{{url('Shop/rendang')}}" target="_blank">Rendang </a>
+          <a href="{{url('Shop/p1nb')}}" target="_blank">Paket 1 Nasi Bungkus </a>
         </p>
         <p>
-          <a href="{{url('Shop/guramibakar')}}" target="_blank">Gurami Bakar</a>
+          <a href="{{url('Shop/p2nb')}}" target="_blank">Paket 2 Nasi Bungkus</a>
         </p>
         <p>
-          <a href="{{url('Shop/ayamgulai')}}" target="_blank">Ayam Gulai</a>
+          <a href="{{url('Shop/p1ns')}}" target="_blank">Paket 1 Nasi Kotak</a>
         </p>
         <p>
-          <a href="{{url('Shop/nkrendang')}}" target="_blank">Paket Nasi Kotak Rendang</a>
+          <a href="{{url('Shop/p1pras')}}" target="_blank">Paket 1 Prasmanan</a>
         </p>
       </div>
       <!-- Grid column -->

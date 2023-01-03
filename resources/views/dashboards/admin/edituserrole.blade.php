@@ -3,9 +3,9 @@
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
-<div align="center" style="background:#1CD5E8;padding:20px;">
-  <h3  class="black-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}">Admin Dashboard</a></h3>
-  <a href="{{url('admin-all-users')}}" class="btn btn-outline-dark" style="color:white">Back</a>
+<div align="center" style="background:#213D3D;padding:20px;">
+  <h3  class="white-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}" style="color: white">Admin Dashboard</a></h3>
+  <a href="{{url('admin-all-users')}}" class="btaobtn btaobtn-outline-dark" style="background-color: white;">Back</a>
 @if (session('status'))
   <div class="alert alert-danger" role="alert">
       {{ session('status') }}
@@ -20,7 +20,7 @@
 
 <div class="container py-2">
    <p align="left">
-    <i class="fas fa-edit"></i> Edit User Role
+    <i class="fas fa-edit"></i> Edit Peran
    </p>
 
     <!--Grid column-->
@@ -44,8 +44,8 @@
 
                         <div class="form-group">
                             <select class="form-control" name="role">
-                                <option value=""  disabled >Select--Role</option>
-                                <option value="user">Default</option>
+                                <option value=""  disabled >Pilih--Peran</option>
+                                <option value="user">User</option>
                                 <option value="admin">Admin</option>
                             </select>
                             </div>

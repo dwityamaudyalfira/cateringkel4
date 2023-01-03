@@ -2,22 +2,22 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller; 
+use App\Http\Controllers\Controller;
 use App\User;
 use App\Models\Products;
 use App\Models\NewsLetter;
 class LinksController extends Controller
 {
-    
+
     public function index()
     {
          return view('dashboards.admin.index');
     }
     public function users()
-    {   
+    {
         //Status 0 is Hide user
         //Status 1 is active user
-        // Status 2 is the user present in the recycle bin 
+        // Status 2 is the user present in the recycle bin
         $users=User::where('status','=','1')->paginate(10);
          return view('dashboards.admin.users')->with('users', $users);
     }
@@ -43,7 +43,7 @@ class LinksController extends Controller
     }
     public function  ShowEditingScreen($id)
     {
-       $Products = Products::find($id); 
+       $Products = Products::find($id);
 
        return view("dashboards.admin.Products.edit")->with('Products',$Products);
     }
@@ -66,8 +66,8 @@ class LinksController extends Controller
         $NewsLetter=NewsLetter::select('email','name')->distinct('name')->paginate(10);
         return view('dashboards.admin.NewsLetter')->with('NewsLetter', $NewsLetter);
     }
-    
-    
-    
-    
+
+
+
+
 }

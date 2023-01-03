@@ -94,7 +94,7 @@ class UserController extends Controller
                 }
 
                   $user->update();
-                   return redirect()->back()->with('successstatus', 'Your Profile Data is Updated Succesfully');
+                   return redirect()->back()->with('successstatus', 'Data Profil Anda Berhasil Diperbarui');
 
 
 
@@ -126,12 +126,12 @@ class UserController extends Controller
                     $user=User::findOrFail($user_id);
                     $user->password=Hash::make($newpass);
                     $user->update();
-                    return redirect()->back()->with('successstatus', 'Password is Updated Succesfully');
+                    return redirect()->back()->with('successstatus', 'Kata Sandi Berhasil Diperbarui');
                 }
                 else
                 {
 
-                    return redirect()->back()->with('passwordwontmatch', 'Password Wont Match! Please Try Again!!');
+                    return redirect()->back()->with('passwordwontmatch', 'Kata Sandi Tidak Cocok! Silakan Coba Lagi!!');
 
                 }
 

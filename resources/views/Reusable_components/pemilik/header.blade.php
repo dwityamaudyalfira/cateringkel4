@@ -1,15 +1,16 @@
-    <!-- ======= Header ======= -->
-    <header id="header" >
-        <div class="container d-flex" >
+<!-- ======= Header ======= -->
+    <header id="header" style="width:100%;">
+        <div class="container d-flex" style="width:80%;">
 
-          <div class="logo mr-auto" >
+          <div class="logo mr-auto"  >
             <!--  <h1 class="text-light"><a href="/">CompanYName</a></h1>  -->
-            <a href="/pemilik-dash"><img src=" {{asset('assets/img/Desi.png')}}" alt="" class="img-fluid" ></a>
+            <a href="/pemilik-dash"><img src=" {{asset('assets/img/logocat.png')}}" alt="" class="img-fluid" style="padding-left:100px;"></a>
 
           </div>
           <p class="mobile-nav-toggle"><i class="fas fa-bars"></i> </p>
           <nav class="nav-menu d-none d-lg-block contentfont" >
             <ul style="margin-top:5px">
+{{--                style="color: #0a2929"--}}
               <li class="active"><a href="/pemilik-dash">Home</a></li>
 {{--              <li><a href="/#about">Tentang kami</a></li>--}}
 {{--              <li><a href="/#Startups">Menu</a></li>--}}
@@ -21,17 +22,17 @@
                 @if (Route::has('login'))
 
                 @auth
-                  <li class="drop-down"><a href="#">Dashboard <i class="fas fa-angle-down"></i></a>
+                  <li class="drop-down"><a href="#"> Dashboard <i class="fas fa-angle-down"></i></a>
                        <ul>
 
-                            <li><a href="{{url('pemilik-Orders')}}" >Pesanan</a></li>
+                            <li><a href="{{url('pemilik-Orders')}}" >Laporan Penjualan</a></li>
 {{--                            <li><a href="{{url('pemilik-Transactions')}}" >Rincian Transaksi</a></li>--}}
-                            <li><a href="/#Products"> Menu Makanan</a></li>
+                            <li><a href="pemilik-products"> Menu</a></li>
                             <a   href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">  {{ __('Logout') }}</a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
-                            </li>
+{{--                            </li>--}}
                         </ul>
                   </li>
 

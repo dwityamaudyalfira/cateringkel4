@@ -80,9 +80,9 @@
                                             <div class="col-md-12">
                                                 <div class="cart-checkout-btn text-center">
                                                     @if (Auth::user())
-                                                         <a href="{{ url('checkout') }}" class="btn btn-outline-success   checkout-btn text-dark">PROCCED TO CHECKOUT</a>
+                                                         <a href="{{ url('checkout') }}" class="btn btn-outline-success   checkout-btn text-dark">CHECKOUT</a>
                                                     @else
-                                                        <a href="{{ url('login') }}" class="btn btn-outline-success  checkout-btn text-dark">PROCCED TO CHECKOUT</a>
+                                                        <a href="{{ url('login') }}" class="btn btn-outline-success  checkout-btn text-dark">CHECKOUT</a>
                                                         {{-- you add a pop modal for making a login --}}
                                                     @endif
                                                 </div>
@@ -92,7 +92,7 @@
                                             </div>
                                             <div align="center" class="col-md-12">
 
-                                                <a href="/" class="btaobtn   btaobtn-primary">Continue Shopping</a>
+                                                <a href="/" class="btaobtn   btaobtn-primary">Lanjut Belanja</a>
 
                                             </div>
                                         </div>
@@ -109,7 +109,7 @@
                                     <div class="col-md-12 mycard py-5 text-center">
                                         <div class="mycards">
                                             <h4>Keranjang anda kosong.</h4>
-                                            <a href="{{ url('/') }}" class="btn btn-upper btn-primary outer-left-xs mt-5" style="border-radius:30px;">Lanjut belanja</a>
+                                            <a href="{{ url('/') }}" class="btn btn-upper btn-primary outer-left-xs mt-5" style="border-radius:30px;">Lanjut Belanja</a>
                                         </div>
                                     </div>
                                 </div>

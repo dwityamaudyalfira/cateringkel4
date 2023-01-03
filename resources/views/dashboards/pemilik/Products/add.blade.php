@@ -1,16 +1,16 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') Desi Catering @endsection
 @section('keywords')   @endsection
 @section('description')   @endsection
 @section('content')
-<div align="center" style="background:#1CD5E8;padding:20px;"> 
-         <h3  class="black-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}">Admin Dashboard</a></h3>
+<div align="center" style="background:#213D3D;padding:20px;">
+         <h3  class="white-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}" style="color: white">Admin Dashboard</a></h3>
 
-        <p class="white-text" style="font-weight:bold;"> 
+        <p class="white-text" style="font-weight:bold;">
 
-            <a href="{{url('admin-products')}}" class="badge badge-pill btn-outline-green     px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Show All Products</a> 
-        
-            <a href="{{url('admin-add-product')}}" class="badge badge-pill btn-dark disabled  px-3 py-2">   <i class="fas fa-plus"></i>  &nbsp; Add New Product</a> 
+            <a href="{{url('admin-products')}}" class="badge badge-pill btn-outline-green     px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Show All Products</a>
+
+            <a href="{{url('admin-add-product')}}" class="badge badge-pill btn-dark disabled  px-3 py-2">   <i class="fas fa-plus"></i>  &nbsp; Add New Product</a>
             <a href="{{url('admin-bin-products')}}" class="badge badge-pill btn-outline-danger px-3 py-2"><i class="fas fa-dumpster"></i> Recycle Bin</a>
 
         </p>
@@ -19,11 +19,11 @@
             {{ session('status') }}
         </div>
         @endif
-  
+
 
 </div>
 
- 
+
 
 <div class="container py-5">
     <p align="left">
@@ -39,7 +39,7 @@
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
                       aria-selected="true">Home</a>
                   </li>
-                   
+
                   <li class="nav-item">
                       <a class="nav-link" id="Images-tab" data-toggle="tab" href="#Images" role="tab" aria-controls="Images"
                         aria-selected="false">Images</a>
@@ -56,7 +56,7 @@
                       <a class="nav-link" id="Additional_Information-tab" data-toggle="tab" href="#Additional_Information" role="tab" aria-controls="Additional_Information"
                         aria-selected="false">Additional Information</a>
                     </li>
-                     
+
                 </ul>
                 <div class="tab-content" id="myTabContent">
                   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -68,7 +68,7 @@
                                   <input type="text" class="form-control" name="name"  placeholder="Enter Name">
                               </div>
                           </div>
-                          
+
 
                           <div class="col-md-6">
                               <div class="form-group">
@@ -104,7 +104,7 @@
                                   <input type="number" name="Discount" min="0" class="form-control">
                               </div>
                           </div>
-  
+
                           <div class="col-md-6">
                             <div class="form-group">
                                 <label>Rating</label>
@@ -114,7 +114,7 @@
                                       <option value="3">3</option>
                                        <option value="4">4</option>
                                         <option value="5">5</option>
-                                </select> 
+                                </select>
                             </div>
                         </div>
                           <div class="col-md-12">
@@ -130,7 +130,7 @@
 
 
                   </div>
-                
+
 
                  <div class="tab-pane fade" id="Images" role="tabpanel" aria-labelledby="Images-tab">
                      <div class="row px-5 py-3">
@@ -201,7 +201,7 @@
 
                       <div class="row" style="padding:30px;">
 
-                         
+
                                <div class="col-md-6">
                               <div class="form-group">
                                   <label> Delivery Charges</label>
@@ -230,12 +230,12 @@
                              <div class="page-wrapper box-content">
 
                                 <textarea class="content" name="additional_info"></textarea>
-                    
+
                             </div>
                             <div class="col-md-12">
                              <button type="submit" class="btaobtn btaobtn-success">Save</button>
                              </div>
-                    
+
                             <script>
                             $(document).ready(function() {
                                 $('.content').richText();
@@ -243,7 +243,7 @@
                             </script>
                         </div>
                     </div>
-                     
+
 
 
                 </div>

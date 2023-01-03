@@ -1,15 +1,15 @@
 @extends('layout')
-@section('title') Gainloe @endsection
+@section('title') Desi Catering @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
 @section('content')
-<div align="center" style="background:#1CD5E8;padding:20px;"> 
-    <h3  class="black-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}">Admin Dashboard</a></h3>
+<div align="center" style="background:#213D3D;padding:20px;">
+    <h3  class="white-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}" style="color: white">Admin Dashboard</a></h3>
 
-<p class="white-text" style="font-weight:bold;"> 
-    <a href="{{url('admin-products')}}" class="badge badge-pill btn-outline-green px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Show All Products</a> 
-        
-    <a href="{{url('admin-add-product')}}" class="badge badge-pill btn-outline-dark   px-3 py-2">   <i class="fas fa-plus"></i>  &nbsp; Add New Product</a> 
+<p class="white-text" style="font-weight:bold;">
+    <a href="{{url('admin-products')}}" class="badge badge-pill btn-outline-green px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Show All Products</a>
+
+    <a href="{{url('admin-add-product')}}" class="badge badge-pill btn-outline-dark   px-3 py-2">   <i class="fas fa-plus"></i>  &nbsp; Add New Product</a>
     <a href="{{url('admin-bin-products')}}" class="badge badge-pill btn-outline-danger px-3 py-2"><i class="fas fa-dumpster"></i> Recycle Bin</a>
 
 </p>
@@ -18,11 +18,11 @@
       {{ session('status') }}
   </div>
   @endif
-  
+
 
 </div>
 
- 
+
 
 <div class="container py-5">
     <p align="left">
@@ -34,7 +34,7 @@
             <div class="card-body">
                 <table class="table table-striped table-bordered">
                     <thead>
-                       
+
                         <th>Name</th>
                         <th>Description</th>
                         <th>Images</th>
@@ -49,7 +49,7 @@
 
                             <td>{{$item->name}}</td>
                             <td>{{$item->description}}</td>
-                         
+
 
                             <td>
                             <img src="{{asset('Uploads/Products/'.$item->image1)}}" width="50px;"  alt="{{$item->image1}}" />
